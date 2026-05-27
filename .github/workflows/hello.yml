@@ -1,0 +1,12 @@
+name: "Meu primeiro workflow"
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dizer ola
+        run: echo "O CI/CD funcionou!"
